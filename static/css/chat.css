@@ -1,0 +1,192 @@
+.container {
+	max-width: 1140px;
+	margin-top: 10px;
+}
+
+/*
+===========================
+Navbar and in-between
+===========================
+*/
+
+.profile-link, .logout {
+	text-decoration: none;
+	margin-right: 10px;
+	padding: 20px;
+}
+.profile-link:hover, .logout:hover {
+	background-color: #f8f9fa;
+}
+
+/*
+===========================
+Navbar and in-between
+===========================
+*/
+
+/*
+===========================
+content container and in-between
+===========================
+*/
+
+.content-container {
+	background-color: #8796af;
+	padding-top: 20px;
+	display: flex;
+	height: 650px;
+	overflow: hidden;
+}
+
+
+.list-users-container {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	border-right: 1px solid #e6ecf3;
+	padding-right: 10px;
+	overflow-y: auto;
+}
+
+.list-users {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.search-box {
+	margin: 10px;
+	position: sticky;
+}
+
+.user {
+	display: flex;
+	flex-direction: row;
+	padding: 15px 0 1rem 0;
+	cursor: pointer;
+	width: 100%;
+}
+.user:hover {
+	background: #fff;
+}
+
+.profile {
+	margin: 0 10px;
+}
+
+.name-time {
+	margin-top: 10px;
+}
+
+.name {
+	font-size: .85rem;
+	font-weight: 600;
+}
+.last-seen {
+	font-weight: 400;
+    font-size: .7rem;
+    color: #e6ecf3;
+}
+
+img {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+}
+
+/*
+===========================
+content container and in-between
+===========================
+*/
+
+/*
+===========================
+direct-chat and in-between
+===========================
+*/
+
+.direct-chat-container {
+	width: 75%;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.receiver-container {
+	border-bottom: 1px solid #e6ecf3;
+	padding-left: 10px;
+	background-color: #8796af;
+}
+
+.receiver-name {
+	font-weight: 600;
+}
+
+.chat-container {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	overflow-y: auto;
+}
+
+.sent-message-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	margin-right: 10px;
+}
+
+.sent-message {
+	background-color: #f8f9fa;
+	margin: 5px;
+	border-radius: 10px;
+	padding: 10px 10px 0 10px;
+	max-width: 500px;
+	word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.received-message-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	margin-left: 10px;
+}
+
+.received-message {
+	background-color: #f8f9fa;
+	margin: 5px;
+	border-radius: 10px;
+	padding: 10px 10px 0 10px;
+	max-width: 500px;
+	word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.message-box {
+	position: sticky;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+}
+.message-box-container {
+	padding: 10px;
+}
+
+.message-box {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/*
+===========================
+direct-chat and in-between
+===========================
+*/

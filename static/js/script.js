@@ -22,13 +22,16 @@ document.addEventListener('DOMContentLoaded',function(){
 //reveal password script
 document.addEventListener('DOMContentLoaded', function() {
     const passwordField = document.getElementById('password');
+    const confirmPasswordField = document.getElementById('confirmPassword');
     const checkbox = document.getElementById('flexCheckDefault');
 
     checkbox.addEventListener('change', function(){
         if (checkbox.checked){
             passwordField.type = 'text';
+            confirmPasswordField.type = 'text';
         }else{
-            passwordField.type = 'password'
+            passwordField.type = 'password';
+            confirmPasswordField.type = 'password'
         }
     });
 });
