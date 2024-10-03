@@ -22,15 +22,23 @@
             </div>
             {% endfor %}
         {% endif %}
-        <form action="" method="post">
+        <form action="" method="post" enctype="multipart/form-data" >
             {% csrf_token %}
             <div class="profile-image">
                 <img src="" id="profile-image" alt="">
             </div>
+
             <div class="input-group mb-3">
                 <input type="file" class="form-control" id="inputGroupFile02" accept="image/*">
+                <!-- <label for="inputGroupFile02" class="input-group-text">Choose image</label> -->
             </div>
             
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Tell us something about you...">
+                <label for="floatingInput">I'm online with DjangoConnect</label>
+              </div>
+              
+
             <div class="d-grid gap-2">
                 <button class="btn btn-success" type="submit">Select Picture</button>
                 <a href="{% url 'index' %}" class="mb-3 btn btn-outline-info" type="button">Skip</a>

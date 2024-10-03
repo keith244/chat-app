@@ -1,7 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import BaseUserManager,AbstractBaseUser,PermissionsMixin
 import uuid
+from django.conf import settings
 # Create your models here.
+
+
 class CustomUserManager(BaseUserManager):
     def create_user(self,username,email,password=None,**extra_fields):
         if not username:
@@ -43,3 +46,14 @@ class MyUser(AbstractBaseUser,PermissionsMixin):
     class Meta:
         verbose_name = 'User'
         verbose_name_plural = 'Users'
+
+class Profile(models.Model):
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='profile_images/', blank=True, null=True)
+    about = models.TextField(max_length=250, blank=True)
+
+    def __str__(self):
+        return f'{self.user.username}-- {self.about}'
+    
+    class Meta:
+        verbose_name_plural ='User Profiles'

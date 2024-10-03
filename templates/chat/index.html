@@ -5,8 +5,9 @@
 		
 	<nav class="navbar bg-body-light">
 		<div class="container-fluid">
-			<a class="navbar-brand">Chat App</a>
+			<a class="navbar-brand"><i>DjangoConnect</i></a>
 			<div class="nav-link">
+				<a href="{% url 'admin:index' %}">Admin</a>
 				<a href="{% url 'profile-pic' %}" class="profile-link">Profile</a>
 				<a href="{% url 'logout' %}" class="logout">Logout</a>
 			</div>
